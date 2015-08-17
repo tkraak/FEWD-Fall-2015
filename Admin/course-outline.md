@@ -35,7 +35,7 @@
 	* Intro to the DOM.
 	* Responding to events.
 
-## Unit 6: Advanced HTML, CSS & JavaScript
+## Unit 6: Advanced HTML & CSS
 	* The HTML5 outline algorithm.
 	* Feature detection with Modernizr.js.
 	* Intro to web forms.
