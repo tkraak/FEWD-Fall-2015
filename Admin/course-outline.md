@@ -8,7 +8,7 @@
 	 * The web standards movement.
 
 # Unit 2: Intro to Tools & Workflows
-	* The local development environment. 
+	* The local development environment.
 	* Text editors and IDEs.
 	* FTP & Chrome Dev Tools.
 	* Local development server.
@@ -35,7 +35,7 @@
 	* Intro to the DOM.
 	* Responding to events.
 
-Unit 6: Advanced HTML, CSS & JavaScript
+# Unit 6: Advanced HTML, CSS & JavaScript
 	* The HTML5 outline algorithm.
 	* Feature detection with Modernizr.js.
 	* Intro to web forms.
@@ -43,26 +43,26 @@ Unit 6: Advanced HTML, CSS & JavaScript
 	* CSS page layout.
 	* Cross-browser consistency with normalize.css.
 
-Unit 7: Responsive Web Design
+# Unit 7: Responsive Web Design
 	* Brief history of RWD.
 	* Flexible / fluid layout.
 	* Flexible images.
 	* Media queries.
 	* Responsive images.
 
-Unit 8: Frameworks & Libraries
+# Unit 8: Frameworks & Libraries
 	* What is a front-end framework?
 	* What is a JavaScript library?
 	* Intro to Bootstrap.
 	* Intro to jQuery.
 
-Unit 9: Accessibility
+# Unit 9: Accessibility
 	* What is web accessibility?
 	* Accessible HTML and ARIA landmark roles.
 	* Accessible CSS.
 	* Accessible JavaScript.
 
-Unit 10: Optimization & Deployment
+# Unit 10: Optimization & Deployment
 	* Browser and device testing.
 	* Progressive enhancements and graceful degradation.
 	* Intro to web performance.
