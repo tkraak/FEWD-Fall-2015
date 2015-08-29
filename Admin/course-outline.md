@@ -1,16 +1,16 @@
-## UNIT 1: Intro to Front-end Web Development
-	 * What is a front-end web developer?
-	 * What is a web designer?
-	 * What is a "full stack" developer?
-	 * The 3 pillars of the web: HTML, CSS, JavaScript.
-	 * HTTP,  DNS, domain names, browsers and servers.
-	 * The W3C and its history.
-	 * The web standards movement.
+## Unit 1: Intro to Front-end Web Development
+	* What is a front-end web developer?
+	* What is a web designer?
+	* What is a "full stack" developer?
+	* The 3 pillars of the web: HTML, CSS, JavaScript.
+	* HTTP,  DNS, domain names, browsers and servers.
+	* The W3C and its history.
+	* The web standards movement.
 
 ## Unit 2: Intro to Tools & Workflows
 	* The local development environment.
 	* Text editors and IDEs.
-	* FTP & Chrome Dev Tools.
+	* FTP & Chrome DevTools.
 	* Local development server.
 	* Command line basics.
 	* Version control with Git and GitHub.
