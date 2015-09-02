@@ -56,7 +56,7 @@ class: center, middle
 ---
 class: center, middle
 
-# 3 Cornerstones of the Web
+# Cornerstones of the Web
 ## HTML
 ## CSS
 ## JavaScript
