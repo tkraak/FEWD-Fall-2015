@@ -1,24 +1,35 @@
 class: center, middle
 
-# Unit 1: Intro to Front-end Web Development
+# Unit 2
+## Local Development Environment
 
 ---
+class: center, middle
 
-# What is a front-end web developer?
-
-1. Introduction
-2. Deep-dive
-3. ...
-
-[NOTE]: Note that you need active internet connection to access remark.js script file
----
-
-# Introduction
+# Text Editors & IDEs
+### SublimeText
+### Atom
+### Brackets
+### Notepad++
 
 ---
+class: center, middle
 
-# Another Slide
+# FTP & Chrome DevTools
+### FileZilla
+### Transmit
 
 ---
+class: center, middle
 
-# And another one
+# Local Development Server
+
+---
+class: center, middle
+
+# Command Line Basics
+
+---
+class: center, middle
+
+# Version Control with Git & GitHub
