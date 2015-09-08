@@ -18,6 +18,13 @@ class: center, middle
 ---
 class: center, middle
 
+# Code!
+
+![Real web designers write code. Always have, always will.](slides/zeldman-web-designer-tweet.png)
+
+---
+class: center, middle
+
 # What is a front-end web developer?
 
 ???
