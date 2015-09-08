@@ -1,0 +1,138 @@
+/*******************************************************************************
+#Font imports
+*******************************************************************************/
+
+@import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+@import url(http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+@import url(http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+
+/*******************************************************************************
+Home page background and headings
+*******************************************************************************/
+
+body.index {
+  background-image: url(/assets/svg/blue-line.svg), url(/assets/svg/red-line.svg);
+  background-size: 100vw 1.5em, 32px 32px;
+  background-repeat: repeat, repeat-y;
+  background-position: 0 0, 64px 0;
+  font: 200%/1.5 Bradley Hand, Segoe Script, cursive;
+}
+
+.index h1 {
+  font: 150%/1.5 'Yanone Kaffeesatz';
+}
+
+.index h2 {
+  font: 100%/1.5 'Yanone Kaffeesatz';
+}
+
+/*******************************************************************************
+Home page quote
+*******************************************************************************/
+
+blockquote {
+  margin: 1.7em 0 0 0;
+}
+
+blockquote p {
+  margin: 0;
+}
+
+blockquote cite {
+  font: 80%/0.75 'Yanone Kaffeesatz';
+  color: tomato;
+}
+
+/*******************************************************************************
+Links
+*******************************************************************************/
+
+a:link {
+  color: tomato;
+  text-decoration: none;
+  transition: .3s border-bottom;
+}
+
+a:visited {
+  color: tomato;
+}
+
+a:hover, a:active {
+  border-bottom: 1px dotted tomato;
+}
+
+/*******************************************************************************
+Header
+*******************************************************************************/
+
+header {
+  background-color: white;
+  padding-left: 5%;
+}
+
+/*******************************************************************************
+Main navigation
+*******************************************************************************/
+
+section nav {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  margin-top: 10%;
+  background-color: white;
+}
+
+nav ul {
+  width: 70%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  padding: 0.5em;
+}
+
+/*******************************************************************************
+Misc
+*******************************************************************************/
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+main {
+  margin: 0 7%;
+}
+
+/* 700px and up */
+@media (min-width: 43.75em) {
+  main {
+    margin: 0 13.4933%;
+  }
+}
+
+/*******************************************************************************
+Flexbox experiments
+*******************************************************************************/
+
+.flex-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  -webkit-flex-flow: row wrap;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.flex-item {
+  width: 200px;
+  line-height: 50px;
+  color: tomato;
+  font-weight: bold;
+  font-size: 1.5em;
+  text-align: center;
+}
