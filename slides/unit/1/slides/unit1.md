@@ -2,6 +2,10 @@ class: center, middle
 
 # Unit 1
 ## Intro to Front-end Web Development
+___
+### Tom Kraak
+#### tkraak@me.com
+#### @tkraak
 
 ---
 class: center, middle
