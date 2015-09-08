@@ -4,7 +4,7 @@ class: center, middle
 ## Intro to Front-end Web Development
 ___
 ### Tom Kraak
-#### tkraak@me.com
+#### tom@backroom.io
 #### @tkraak
 
 ---
@@ -22,7 +22,7 @@ class: center, middle
 ---
 class: center, middle
 
-# Code!
+# Let's get real!
 
 ![Real web designers write code. Always have, always will.](slides/zeldman-web-designer-tweet.png)
 
@@ -104,6 +104,16 @@ class: center, middle
 ## Browsers
 ## Servers
 
+???
+
+* Hypertext Transfer Protocol (HTTP)
+* domain name system (DNS)
+
+## Learn more
+
+* [HTTP on Wikipedia](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol)
+* [How DNS Works](https://howdns.works/)
+
 ---
 class: center
 
@@ -163,7 +173,6 @@ class: center, middle
 
 # The W3C and its History
 
----
-class: center, middle
+???
 
-# The Web Standards Movement
+The World Wide Web Consortium (W3C) is an international community where Member organizations, a full-time staff, and the public work together to develop Web standards. Led by Web inventor Tim Berners-Lee and CEO Jeffrey Jaffe, W3C's mission is to lead the Web to its full potential. Contact W3C for more information.
