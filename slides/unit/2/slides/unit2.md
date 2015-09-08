@@ -23,6 +23,12 @@ class: center, middle
 class: center, middle
 
 # Local Development Server
+### MAMP
+
+???
+# Learn more
+
+* [MAMP](https://www.mamp.info/en/)
 
 ---
 class: center, middle
