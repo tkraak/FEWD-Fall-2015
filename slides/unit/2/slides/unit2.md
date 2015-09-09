@@ -35,6 +35,11 @@ class: center, middle
 
 # Command Line Basics
 
+???
+## Learn more
+
+* [The designer’s guide to the OSX command prompt](http://wiseheartdesign.com/articles/2010/11/12/the-designers-guide-to-the-osx-command-prompt/)
+
 ---
 class: center, middle
 
