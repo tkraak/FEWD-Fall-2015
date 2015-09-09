@@ -7,10 +7,10 @@
 @import url(http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
 
 /*******************************************************************************
-Home page background and headings
+Page background and headings
 *******************************************************************************/
 
-body.index {
+body {
   background-image: url(/assets/svg/blue-line.svg), url(/assets/svg/red-line.svg);
   background-size: 100vw 1.5em, 32px 32px;
   background-repeat: repeat, repeat-y;
@@ -18,16 +18,20 @@ body.index {
   font: 200%/1.5 Bradley Hand, Segoe Script, cursive;
 }
 
-.index h1 {
+h1 {
   font: 150%/1.5 'Yanone Kaffeesatz';
 }
 
-.index h2 {
+h2 {
   font: 100%/1.5 'Yanone Kaffeesatz';
 }
 
+h2 span {
+  color: tomato;
+}
+
 /*******************************************************************************
-Home page quote
+Page quote
 *******************************************************************************/
 
 blockquote {
@@ -41,6 +45,7 @@ blockquote p {
 blockquote cite {
   font: 80%/0.75 'Yanone Kaffeesatz';
   color: tomato;
+  padding-left: 5%;
 }
 
 /*******************************************************************************
