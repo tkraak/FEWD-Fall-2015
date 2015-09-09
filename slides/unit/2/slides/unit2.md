@@ -44,3 +44,8 @@ class: center, middle
 class: center, middle
 
 # Version Control with Git & GitHub
+
+???
+## Learn more
+
+* [Code School: Try Git](https://try.github.io)
