@@ -40,6 +40,7 @@ class: center, middle
 ## Learn more
 
 * [The designer’s guide to the OSX command prompt](http://wiseheartdesign.com/articles/2010/11/12/the-designers-guide-to-the-osx-command-prompt/)
+* [Introduction to the Mac OS X Command Line](http://blog.teamtreehouse.com/introduction-to-the-mac-os-x-command-line)
 
 ---
 class: center, middle
@@ -50,3 +51,4 @@ class: center, middle
 ## Learn more
 
 * [Code School: Try Git](https://try.github.io)
+* [GitHub Help](https://help.github.com/)
