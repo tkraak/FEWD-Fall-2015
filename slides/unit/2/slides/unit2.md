@@ -26,7 +26,7 @@ class: center, middle
 ### MAMP
 
 ???
-# Learn more
+## Learn more
 
 * [MAMP](https://www.mamp.info/en/)
 
