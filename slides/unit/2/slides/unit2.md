@@ -29,6 +29,7 @@ class: center, middle
 ## Learn more
 
 * [MAMP](https://www.mamp.info/en/)
+* [The Perfect Web Development Environment for Your New Mac](https://mallinson.ca/osx-web-development/)
 
 ---
 class: center, middle
