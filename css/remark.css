@@ -8,7 +8,25 @@ h1, h2, h3 {
 }
 
 .remark-code,
-.remark-inline-code { font-family: 'Ubuntu Mono'; }
+.remark-inline-code {
+  font-family: 'Ubuntu Mono';
+  font-size: 1.2em;
+}
+
+#slide-css-browser,
+#slide-css-rule,
+#slide-css-selector-declaration,
+#slide-css-property-value {
+  background-color: #233135;
+}
+
+.red-text {
+  color: crimson;
+}
+
+.pink-bg {
+  background-color: pink;
+}
 
 /*******************************************************************************
 Flexbox experiments
