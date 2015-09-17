@@ -1,7 +1,7 @@
 class: center, middle
 
-# Unit 2
-## Local Development Environment
+# Unit 4
+## Cascading Style Sheets (CSS)
 
 ---
 class: center, middle
