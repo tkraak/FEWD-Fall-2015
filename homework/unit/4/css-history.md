@@ -1,6 +1,6 @@
 ## Setup
   * Create a `homework` folder in your git repository.
-  * [Download](https://github.com/tkraak/fewd-fall-2015/blob/gh-pages/homework/unit/4/css-history.html) the `css-history.html` [practice file](https://github.com/tkraak/fewd-fall-2015/blob/gh-pages/homework/unit/4/css-history.html) and place it into your homework folder.
+  * [Grab](https://github.com/tkraak/fewd-fall-2015/blob/gh-pages/homework/unit/4/css-history.html) the `css-history.html` [practice file](https://github.com/tkraak/fewd-fall-2015/blob/gh-pages/homework/unit/4/css-history.html) and place it into your homework folder.
   * Create a stylesheet document and name it `css-history.css` and place it "next to" `css-history.html` in your local folder structure. Make sure you are in your repo.
   * Commit frequently to your local repository and push to your remote repository on GitHub as needed.      
 
