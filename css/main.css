@@ -6,6 +6,20 @@
 @import url(http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
 @import url(http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
 
+@import url(https://fonts.googleapis.com/css?family=Fredoka+One);
+
+/*******************************************************************************
+# Universal Box Sizing Reset with Inheritance
+*******************************************************************************/
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 /*******************************************************************************
 Page background and headings
 *******************************************************************************/
@@ -15,15 +29,11 @@ body {
   background-size: 100vw 1.5em, 32px 32px;
   background-repeat: repeat, repeat-y;
   background-position: 0 0, 64px 0;
-  font: 200%/1.5 Bradley Hand, Segoe Script, cursive;
 }
 
-h1 {
-  font: 150%/1.5 'Yanone Kaffeesatz';
-}
-
-h2 {
-  font: 100%/1.5 'Yanone Kaffeesatz';
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Yanone Kaffeesatz'
+  margin: 0;
 }
 
 h2 span {
@@ -31,10 +41,63 @@ h2 span {
 }
 
 /*******************************************************************************
+Header
+*******************************************************************************/
+
+header {
+  background-color: white;
+}
+
+/*******************************************************************************
+Main navigation
+*******************************************************************************/
+
+nav {
+  background-color: white;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 1.5em;
+  margin: 0 auto;
+  width: 50%;
+}
+
+nav ul {
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 0.5em;
+}
+
+nav li:nth-child(3) {
+    font-family: 'Fredoka One', cursive;
+    font-size: 2em;
+    margin-left: 0.25em;
+    position: relative;
+    top: 0.2em;
+}
+
+nav li:nth-child(3) a:link {
+  color: slategray;
+  text-decoration: none;
+}
+
+nav li:nth-child(3) a:visited {
+  color: slategray;
+}
+
+nav li:nth-child(3) a:hover,
+nav li:nth-child(3) a:active {
+  border-bottom-style: none;
+  text-decoration: none;
+}
+
+/*******************************************************************************
 Page quote
 *******************************************************************************/
 
 blockquote {
+  font: 200%/1.5 Bradley Hand, Segoe Script, cursive;
   margin: 1.7em 0 0 0;
 }
 
@@ -67,42 +130,8 @@ a:hover, a:active {
 }
 
 /*******************************************************************************
-Header
-*******************************************************************************/
-
-header {
-  background-color: white;
-  padding-left: 5%;
-}
-
-/*******************************************************************************
-Main navigation
-*******************************************************************************/
-
-section nav {
-  font-family: 'Yanone Kaffeesatz', sans-serif;
-  margin-top: 10%;
-  background-color: white;
-}
-
-nav ul {
-  width: 70%;
-  margin: 0 auto;
-  padding: 0;
-}
-
-nav li {
-  display: inline-block;
-  padding: 0.5em;
-}
-
-/*******************************************************************************
 Misc
 *******************************************************************************/
-
-h1, h2, h3, h4, h5, h6 {
-  margin: 0;
-}
 
 main {
   margin: 0 7%;
