@@ -8,7 +8,17 @@ class: center, middle
 
 * style sheet language for formatting / styling markup languages such as HTML
 * enables the separation of content (HTML) and presentation (CSS)
-
+---
+name: css-history
+class: center, middle
+# Brief History of CSS
+### - .red-text[1996]: first official version (CSS Level 1)
+### - .red-text[1998]: CSS2 (CSS Level 2)
+### - .red-text[2011]: CSS2.1 (CSS Level 2, Revision 1) full Recommendation
+### - Earliest CSS 3 drafts were published in June .red-text[1999]
+---
+name: css-taxonomy
+background-image: url(slides/css3-taxonomy.svg)
 ---
 name: css-browser
 background-image: url(slides/css-browser.png)
