@@ -64,6 +64,7 @@ nav {
 
 nav ul {
   padding: 0;
+  text-align: center;
 }
 
 nav li {
@@ -75,7 +76,7 @@ nav li:nth-child(2) {
   margin-right: 2.5em;
 }
 
-nav li:nth-child(3) {
+header nav li:nth-child(3) {
     font-family: 'Fredoka One', cursive;
     font-size: 2em;
     margin-left: 0.25em;
@@ -83,23 +84,27 @@ nav li:nth-child(3) {
     top: 0.2em;
 }
 
-nav li:nth-child(4) {
+header nav li:nth-child(3) a:link {
+  color: slategray;
+  text-decoration: none;
+}
+
+header nav li:nth-child(3) a:visited {
+  color: slategray;
+}
+
+header nav li:nth-child(3) a:hover,
+header nav li:nth-child(3) a:active {
+  border-bottom-style: none;
+  text-decoration: none;
+}
+
+header nav li:nth-child(4) {
   margin-left: 2.5em;
 }
 
-nav li:nth-child(3) a:link {
-  color: slategray;
-  text-decoration: none;
-}
-
-nav li:nth-child(3) a:visited {
-  color: slategray;
-}
-
-nav li:nth-child(3) a:hover,
-nav li:nth-child(3) a:active {
-  border-bottom-style: none;
-  text-decoration: none;
+section nav {
+  width: 50%;
 }
 
 /*******************************************************************************
@@ -160,7 +165,7 @@ Type on Circle
 
 .badge {
   position: relative;
-  left: 28%;
+  left: 30%;
   width: 150px;
   border-radius: 50%;
   -webkit-transform: rotate(-50deg);
