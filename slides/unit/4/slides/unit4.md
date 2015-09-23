@@ -278,6 +278,7 @@ name: css-id-selector
 class:
 
 ## ID Selector
+Matches an element whose `id` attribute has a value that matches the one specified after the pound or hash symbol.
 
 .float-left[
 
@@ -316,6 +317,7 @@ name: css-class-selector
 class:
 
 ## Class Selector
+Matches an element whose `class` attribute has a value that matches the one specified after the period symbol.
 
 .float-left[
 
@@ -354,6 +356,7 @@ name: css-tag-selector
 class:
 
 ## Tag Selector
+Matches HTML element names.
 
 .float-left[
 
@@ -380,9 +383,6 @@ h2 {
 </main>
 
 <!-- Will NOT match -->
-<div class="h2">Wrong tag, can't trick it</div>
-
-<!-- Will NOT match -->
 <h2class="yolo">Make sure that tag has a space after it!</h2>
 ```
 ]
@@ -398,13 +398,15 @@ name: css-child-selector
 class:
 
 ## Child Selector
+Matches an element that is a direct child of another.
 
 .float-left[
 
 ### .red-text[CSS]
 ```css
-ol > li {
-  margin: 5px;
+li > a {
+  color: tomato;
+  text-decoration: none;
 }
 ```
 ]
@@ -413,15 +415,11 @@ ol > li {
 
 ### .red-text[HTML]
 ```html
-<ol>
-  <li>WILL be selected</li>
-  <li>WILL be selected</li>
-  <ul>
-     <li>Will NOT be selected</li>
-     <li>Will NOT be selected</li>
-  </ul>
-  <li>WILL be selected</li>
-</ol>
+<ul>
+  <li><a href="#">WILL be selected</a></li>
+  <li><a href="#">WILL be selected</a></li>
+</ul>
+<p><a href="#">WILL NOT be selected</a></p>
 ```
 ]
 
@@ -435,6 +433,7 @@ name: css-descendant-selector
 class:
 
 ## Descendant Selector
+Matches an element that is a descendant of another specified element (not just a direct child of that element.)
 
 .float-left[
 
