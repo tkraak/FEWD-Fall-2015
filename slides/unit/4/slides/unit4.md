@@ -16,6 +16,10 @@ class: center, middle
 ### - .red-text[1998]: CSS2 (CSS Level 2)
 ### - .red-text[2011]: CSS2.1 (CSS Level 2, Revision 1) full Recommendation
 ### - Earliest CSS 3 drafts were published in June .red-text[1999]
+
+???
+[W3C: CSS Current Work](khttp://www.w3.org/Style/CSS/current-work.en.html)
+
 ---
 name: css-taxonomy
 background-image: url(slides/css3-taxonomy.svg)
@@ -466,3 +470,147 @@ div span  {  }
 ???
 
 A descendant selector in CSS is any selector with white space between two selectors without a combinator. Descendant means anywhere nested within it in the DOM tree. Could be a direct child, could be five levels deep, it is still a descendant. This is different than a child combinator (>) which requires the element to be the next nested level down.
+
+---
+name: css-big-concepts
+class: center, middle
+
+# .red-text[The Big Concepts of CSS]
+## - Inheritance
+## - Cascade
+## - Specificity
+## - Box Model
+
+---
+name: html-document-tree
+class: center
+
+## Visualizing Inheritance
+### .red-text[HTML Document Structure / Upside-down Family Tree]
+
+![HTML Document Tree](slides/html-document-tree.gif)
+
+???
+* All elements contained within a given element are said to be its .red-text[descendants].
+* An element that's directly contained within another element is said to be a .red-text[child] of that element.
+* The containing element is the .red-text[parent].
+* All elements higher up than a particular element in the tree are its .red-text[ancestors].
+* Two elements with the same parent are .red-text[siblings].
+
+---
+name: css-inheritance
+class:
+
+# Pass it on
+
+### .red-text[CSS]
+```css
+p {
+  font-family: Verdana, sans-serif;
+  font-size: 1em;
+}
+```
+
+### .red-text[HTML]
+```html
+<section>
+  <h1>Headline</h1>
+  <p>Something <em>very important</em> going on here!</p>
+</section>
+```
+???
+* in general, properties related to styling text are inherited
+* properties such as borders, margins, backgrounds are not inherited
+
+---
+name: css-font-body
+class:
+
+# Apply Font-related Properties to Body
+
+### .red-text[CSS]
+```css
+body {
+  font-family: 'Roboto Slab', serif;
+  font-size: 1em; /* equivalent to 16px */
+  line-height: 1.25; /* equivalent to 20px */
+}
+
+h1 {
+  font-size: 2em;
+  line-height: 1.25;
+}
+
+h2 {
+  font-size: 1.625em;
+  line-height: 1.15384615;
+}
+```
+
+---
+name: css-cascade
+class: center
+
+# Conflict Resolution: .red-text[The Cascade]
+
+### - Multiple stylesheets per document
+
+### - .red-text[The Cascade] assigns weights to sources of style info.
+
+### - Style info .red-text["cascades down"] until it is overridden by a style rule with more weight.
+
+### - Generally speaking, .red-text[the closer the stylesheet is to the content , the more weight it is given.]
+
+???
+* CSS allows us to apply several stylesheets to the same document, which means there are bound to be conflicts.
+
+* .red-text[The Cascade is a hierarchical system] that assigns different weights to the various sources of style information.
+
+* When several sources of style info vie for control of HTML elements, style info is passed down .red-text[("cascades down")] until it is overridden by a style rule with more weight.
+
+* Generally speaking, .red-text[the closer the stylesheet is to the content , the more weight it is given.]
+
+---
+name: css-stylesheet-hierarchy
+class: center
+
+# .red-text[Stylesheet Hierarchy]
+
+### From general to specific:
+
+-Browser default styles (user agent stylesheet)
+
+-User styles (reader stylesheet)
+
+-Linked external stylesheet (`<link>` element in `<head>`)
+
+-Imported stylesheet (`@import`)
+
+-Embedded stylesheets (`<style>` element in `<head>`)
+
+-Inline style rule(s) (`style` attribute in HTML opening tag)
+
+-Any style rule makred `!important` by the author
+
+-Any style rule marked `!important` by the reader (user)
+
+---
+name: css-specificity
+class:
+
+# .red-text[Specificity 101]
+
+### Cascade continues at the rule level:
+
+* When 2 rules in a single stylesheet conflict, type of selector determines winner.
+
+* The .red-text[more specific the selector], the more weight is given to override conflicting declarations.
+  * ID selectors (`#happy-cake`)
+  * class selectors (`.happy-cake`)
+  * contextual element selectors (`nav ul`)
+  * individual element selectors (`ul`)
+
+
+???
+* [CSS-Tricks: Specifics on CSS Specificity](https://css-tricks.com/specifics-on-css-specificity/)
+* [CSS Specificity: Things You Should Know](http://www.smashingmagazine.com/2007/07/css-specificity-things-you-should-know/)

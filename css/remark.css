@@ -13,6 +13,10 @@ h1, h2, h3 {
   font-size: 1.2em;
 }
 
+#slide-css-stylesheet-hierarchy .remark-inline-code {
+  color: crimson;
+}
+
 #slide-css-browser,
 #slide-css-rule,
 #slide-css-selector-declaration,
