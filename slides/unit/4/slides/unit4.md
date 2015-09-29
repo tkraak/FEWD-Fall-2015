@@ -712,3 +712,27 @@ p {
 }
 ```
 ]
+
+---
+name: css-box-model-properties
+class:
+
+# .red-text[Box Model Properties]
+
+Each part of the box model corresponds to a CSS property:
+* `width`
+* `height`
+* `padding`
+* `border`
+* `margin`
+
+
+```css
+div {
+  border: 6px solid #949599;
+  height: 100px;
+  margin: 20px;
+  padding: 20px;
+  width: 400px;
+}
+```
