@@ -596,6 +596,20 @@ class: center
 
 ---
 name: css-specificity
+class: center
+
+# Conflict Resolution: .red-text[Specificity]
+
+### -Specificity determines, which CSS rule is applied by the browsers.
+
+### - Specificity is usually the reason why your CSS rules don't apply to some elements.
+
+### - Every selector has its place in the specificity hierarchy.
+
+### -If two selectors apply to the same element, the one with higher specificity wins.
+
+---
+name: css-specificity-101
 class:
 
 # .red-text[Specificity 101]
@@ -603,6 +617,7 @@ class:
 ### Cascade continues at the rule level:
 
 * When 2 rules in a single stylesheet conflict, type of selector determines winner.
+* When selectors have an equal specificity value, the latest rule wins.
 
 * The .red-text[more specific the selector], the more weight is given to override conflicting declarations.
   * ID selectors (`#happy-cake`)
@@ -614,3 +629,86 @@ class:
 ???
 * [CSS-Tricks: Specifics on CSS Specificity](https://css-tricks.com/specifics-on-css-specificity/)
 * [CSS Specificity: Things You Should Know](http://www.smashingmagazine.com/2007/07/css-specificity-things-you-should-know/)
+
+---
+
+name: css-box-model-inline-block
+
+# .red-text[CSS Box Model:] Block-level vs. Inline Elements
+
+### Block-level elements
+
+* begin on a new line
+* stacked on top of each other
+* .red-text[occupy any available width]
+* they may be nested inside one another and may wrap inline-level elements
+
+### Inline elements
+
+* do not begin on a new line
+* fall into the normal flow of a document
+* lining up one after the other
+* .red-text[only maintain the width of their content]
+* may be nested inside one another
+* cannot wrap block-level elements
+
+---
+
+name: css-box-model-display
+class:
+
+# .red-text[Display Property]
+
+.float-left[
+
+```css
+p {
+    display: block;
+}
+```
+
+```css
+p {
+    display: inline;
+}
+```
+
+```css
+p {
+    display: inline-block;
+}
+```
+
+```css
+p {
+    display: none;
+}
+```
+]
+
+.float-right[
+
+```css
+p {
+    display: flex;
+}
+```
+
+```css
+p {
+    display: inline-flex;
+}
+```
+
+```css
+p {
+    display: table;
+}
+```
+
+```css
+p {
+    display: table-cell;
+}
+```
+]
