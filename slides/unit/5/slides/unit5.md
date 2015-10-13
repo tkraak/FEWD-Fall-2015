@@ -122,3 +122,61 @@ if (hourNow > 18) {
 document.write(greeting);
 ```
 ---
+
+name: js-embed
+
+# .red-text[Adding JavaScript to a Page]
+
+## Embedded script
+
+```html
+<script>
+
+  var header = $('header');
+
+  $(window).scroll(function() {
+    header.addClass('lower-opacity');
+
+    if($(this).scrollTop() === 0) {
+      header.removeClass('lower-opacity');
+    }
+  });
+
+</script>
+```
+---
+name: js-external-script
+
+# .red-text[Adding JavaScript to a Page]
+
+## External scripts
+
+```html
+<script src="my_script.js"></script>
+```
+
+???
+
+- apply the same script to multiple pages
+
+- each external script requires an additional HTTP request, which impacts performance
+---
+name: js-script-placement
+
+# .red-text[Script Placement]
+
+### JavaScript runs where it's found in the HTML
+### `<script>` element can go anywhere in the document
+### Most common places are in `<head>` and just before `</body>`
+
+- Browser encounters a `<script>` element
+- stops to load the script
+- then checks if it needs to do anything
+
+### This has implications for `<script>` placement, and can affect the loading time of pages.
+
+???
+
+- Don't sprinkle `<script>` elements throughout the HTML document, because that makes them difficult to find and maintain.
+
+---
