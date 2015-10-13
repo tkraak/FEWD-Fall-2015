@@ -180,3 +180,13 @@ name: js-script-placement
 - Don't sprinkle `<script>` elements throughout the HTML document, because that makes them difficult to find and maintain.
 
 ---
+
+name: dom-intro
+
+# .red-text[Intro to the Document Object Model (DOM)]
+
+### - The DOM gives us a way to access and manipulate the contents of a document.
+### - It's a programming interface (API) for HTML and XML pages.
+### - It serves as a structured map to all elements on a page.
+### - It provides a set of .red-text[methods] to interface with the elements contained in the document.
+### - The DOM translates our markup into a format that JavaScript can understand.
