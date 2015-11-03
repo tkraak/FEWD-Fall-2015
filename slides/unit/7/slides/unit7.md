@@ -10,8 +10,6 @@ class: center, middle
 
 ![Responsive Web Design](/slides/unit/7/slides/rwd.jpg)
 
-
-
 ---
 name: rwd-ethan-marcotte
 
@@ -46,7 +44,7 @@ name: rwd-timeline
 name: rwd-principles
 class: center
 
-# .red-text[3 Building Blocks of RWD]
+# .red-text[3 Core Components of RWD]
 
 ### - Fluid grid
 ### - Flexible images
@@ -55,11 +53,46 @@ class: center
 
 ---
 name: rwd-layouts
-class: center
+class: center, middle
 
-# .red-text[Layout Techniques]
-
-## Fixed Width Layout .red-text[(rigid px)] &rarr; Liquid Layout .red-text[(arbitrary %)]
-## &rarr; Fluid Grid .red-text[(smart proportions)]
+# Fixed Width Layout .red-text[(rigid px)] &rarr; Liquid Layout .red-text[(arbitrary %)]
+# &rarr; Fluid Grid .red-text[(smart % proportions)]
 
 ---
+
+name: rwd-fluid-grid
+class: center
+
+# .red-text[Fluid Grid]
+
+## target / context = result
+
+### 960px / 1920px = 50%
+
+.float-left[<img src="/slides/unit/7/slides/rwd-fluid-grid.png" alt="Fluid Grid" style="width: 600px;"/>]
+
+## &#9825;
+
+#### smart proportions
+
+#### .red-text[sidebar:] 300px / 960px = 31.25%
+#### .red-text[main content:] 640px / 960px = 66.66667%
+#### .red-text[margin:] 20px / 960px = 2.08334%
+
+???
+Treehouse: [The 2014 Guide to Responsive Web Design](http://blog.teamtreehouse.com/modern-field-guide-responsive-web-design)
+
+---
+
+name: rwd-flexible-image
+class: center
+
+# .red-text[Flexible Images]
+
+```html
+img { max-width: 100%; }
+```
+
+### - images should only ever be as large as their physical width in pixels
+### - if nested inside a smaller parent container, then the image should shrink
+### - height will be calculated automatically, will maintain original aspect ratio
