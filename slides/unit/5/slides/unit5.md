@@ -190,3 +190,39 @@ name: dom-intro
 ### - It serves as a structured map to all elements on a page.
 ### - It provides a set of .red-text[methods] to interface with the elements contained in the document.
 ### - The DOM translates our markup into a format that JavaScript can understand.
+
+---
+name: dom-node-tree
+class:
+
+# .red-text[DOM Node Tree]
+
+.float-left[
+![HTML Document Tree](/slides/unit/4/slides/html-document-tree.gif)
+]
+
+.float-right[
+### The DOM is a collection of nodes:
+- element nodes
+- attribute nodes
+- text nodes
+]
+---
+
+name: dom-crawling
+
+# Traversing the DOM
+
+```html
+<p id="betamore">Real web designers <a href="/code">write code</a>. Always have, always will.</p>
+```
+
+```javascript
+var elementNode = document.getElementById("betamore");
+
+var attributeNode = elementNode.getAttribute("href");
+
+var textNode = elementNode.innerHTML;
+```
+
+---
