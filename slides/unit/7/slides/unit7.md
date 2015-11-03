@@ -1,228 +1,65 @@
 class: center, middle
 
-# Unit 5
-## JavaScript (JS)
-### Interactivity & Custom Behaviors
+## Unit 7
+# .red-text[Responsive Web Design]
 
-???
-
-* HTML markup: "structural" layer of web pages
-* CSS rules: "presentational" layer of web pages
-* JavaScript: "behavioral" layer of web pages
 ---
-name: js-history
+name: rwd-definition
 class: center, middle
-# Brief History of JavaScript
-### - .red-text[1995]: created in 10 days by Brendan Eich at Netscape ("LiveScript")
-### - .red-text[December 1995]: JS server-side scripting (Netscape Enterprise Server)
-### - .red-text[1996]: standardized by ECMA ("ECMAScript")
-### - .red-text[June 2015]: ECMAScript standard 6 released
+# What is Responsive Web Design (RWD)?
+
+![Responsive Web Design](/slides/unit/7/slides/rwd.jpg)
+
+
+
+---
+name: rwd-ethan-marcotte
+
+# .red-text[Ethan Marcotte:]
+
+> ## <em>"The web's moved beyond the desktop, and it's not looking back. The number of devices we're designing for is growing just as quickly as mobile traffic."</em>
+
+### - .red-text[2010:] alistapart.com/article/responsive-web-design/
+### - .red-text[2011:] Responsive Web Design (first edition)
+### - .red-text[2014:] Responsive Web Design (2nd edition)
 
 ???
-[Wikipedia: JavaScript](https://en.wikipedia.org/wiki/JavaScript)
+A List Apart: [Responsive Web Design](http://alistapart.com/article/responsive-web-design/) by Ethan Marcotte
+
+A Book Apart: [Responsive Web Design](http://abookapart.com/products/responsive-web-design)
+
+Creative Bloq: [Ethan Marcotte on responsive web design](http://www.creativebloq.com/netmag/ethan-marcotte-responsive-web-design-1126512)
 
 ---
-name: js-what-is
+name: rwd-timeline
 
-# .red-text[What is JavaScript?]
+# .red-text[Ethan Marcotte:]
 
-### - client-side scripting language
-### - reliant on browser's capabilities and settings
-### - dynamic programming language (browser interprets code on the fly, no compiler)
-### - loosely typed ( don't necessarily have to tell JS what a variable is)
+> ## <em>"I think of responsive design as an alternative to mobile sites."</em>
 
+# Desktop & Laptop &rarr; iPhone .red-text[(2007)] &rarr; EM RWD .red-text[(2010)] &rarr;
 
-
----
-name: js-can-do
-
-# .red-text[What can JavaScript do?]
-
-### - controls the "behavioral" layer of web pages
-### - all elements, attributes, and text on a web page can be accessed by scripts via the DOM
-### - scripts can react to user input (alter contents, styles or browser behavior "on the fly")
-### - request content and info from server and inject into page without refresh ("ajax")
-### - test for browser features and capabilities (e.g. Modernizr.js)
-### - fill in browser functionality gaps or add modern features to old browsers (e.g html5shiv.js)
-
-???
-[Modernizr](https://modernizr.com/) tells you what HTML, CSS and JavaScript features the user's browser has to offer.
-
-The [HTML5 Shiv](https://github.com/afarkas/html5shiv) enables use of HTML5 sectioning elements in legacy Internet Explorer and provides basic HTML5 styling for IE 6-9, Safari 4.x (and iPhone 3.x), and Firefox 3.x.
----
-name: js-basics
-class:
-
-# .red-text[The Basics]
-
-### - JavaScript is .red-text[case-sensitive] (myVariable is NOT the same as myvariable)
-### - whitespace such as tabs and spaces are ignored unless its part of a string enclosed in quotes
-
-```javascript
-// this is a single-line comment
-```
-
-```javascript
-/* This is a multi-line comment.
-
-Anything in here will be
-completely ignored
-when the script runs.
-
-*/
-```
+# EM RWD Book .red-text[(2011 1st ed.)] &rarr; EM RWD Book .red-text[(2014 2nd ed.)]
 
 ---
 
-name: js-sample-script
+name: rwd-principles
+class: center
 
-# .red-text[A Sample Script]
+# .red-text[3 Building Blocks of RWD]
 
-### - a script is a series of instructions that the computer can follow one-by-one
+### - Fluid grid
+### - Flexible images
+### - Media queries
 
-```javascript
-var today = new Date(); // each individual instruction is a statement
-var hourNow = today.getHours(); // each statement starts on a new line
-var greeting; // statements end with a semicolon
-
-// statements enclosed in curly braces are known as code blocks
-
-if (hourNow > 18) {
-  greeting = "Good evening";
-} else if (hourNow > 12) {
-  greeting = "Good afternoon";
-} else if (hourNow > 0) {
-  greeting = "Good morning";
-} else {
-  greeting = "Welcome";
-}
-
-document.write(greeting);
-```
----
-name: js-sample-script-clean
-
-# .red-text[Sample Script Without Comments]
-
-```javascript
-var today = new Date();
-var hourNow = today.getHours();
-var greeting;
-
-if (hourNow > 18) {
-  greeting = "Good evening";
-} else if (hourNow > 12) {
-  greeting = "Good afternoon";
-} else if (hourNow > 0) {
-  greeting = "Good morning";
-} else {
-  greeting = "Welcome";
-}
-
-document.write(greeting);
-```
----
-
-name: js-embed
-
-# .red-text[Adding JavaScript to a Page]
-
-## Embedded script
-
-```html
-<script>
-
-  var header = $('header');
-
-  $(window).scroll(function() {
-    header.addClass('lower-opacity');
-
-    if($(this).scrollTop() === 0) {
-      header.removeClass('lower-opacity');
-    }
-  });
-
-</script>
-```
----
-name: js-external-script
-
-# .red-text[Adding JavaScript to a Page]
-
-## External scripts
-
-```html
-<script src="my_script.js"></script>
-```
-
-???
-
-- apply the same script to multiple pages
-
-- each external script requires an additional HTTP request, which impacts performance
----
-name: js-script-placement
-
-# .red-text[Script Placement]
-
-### JavaScript runs where it's found in the HTML
-### `<script>` element can go anywhere in the document
-### Most common places are in `<head>` and just before `</body>`
-
-- Browser encounters a `<script>` element
-- stops to load the script
-- then checks if it needs to do anything
-
-### This has implications for `<script>` placement, and can affect the loading time of pages.
-
-???
-
-- Don't sprinkle `<script>` elements throughout the HTML document, because that makes them difficult to find and maintain.
 
 ---
+name: rwd-layouts
+class: center
 
-name: dom-intro
+# .red-text[Layout Techniques]
 
-# .red-text[Intro to the Document Object Model (DOM)]
-
-### - The DOM gives us a way to access and manipulate the contents of a document.
-### - It's a programming interface (API) for HTML and XML pages.
-### - It serves as a structured map to all elements on a page.
-### - It provides a set of .red-text[methods] to interface with the elements contained in the document.
-### - The DOM translates our markup into a format that JavaScript can understand.
-
----
-name: dom-node-tree
-class:
-
-# .red-text[DOM Node Tree]
-
-.float-left[
-![HTML Document Tree](/slides/unit/4/slides/html-document-tree.gif)
-]
-
-.float-right[
-### The DOM is a collection of nodes:
-- element nodes
-- attribute nodes
-- text nodes
-]
----
-
-name: dom-crawling
-
-# Traversing the DOM
-
-```html
-<p id="betamore">Real web designers <a href="/code">write code</a>. Always have, always will.</p>
-```
-
-```javascript
-var elementNode = document.getElementById("betamore");
-
-var attributeNode = elementNode.getAttribute("href");
-
-var textNode = elementNode.innerHTML;
-```
+## Fixed Width Layout .red-text[(rigid px)] &rarr; Liquid Layout .red-text[(arbitrary %)]
+## &rarr; Fluid Grid .red-text[(smart proportions)]
 
 ---
