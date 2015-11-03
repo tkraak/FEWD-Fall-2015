@@ -89,10 +89,97 @@ class: center
 
 # .red-text[Flexible Images]
 
-```html
+```css
 img { max-width: 100%; }
 ```
 
 ### - images should only ever be as large as their physical width in pixels
 ### - if nested inside a smaller parent container, then the image should shrink
 ### - height will be calculated automatically, will maintain original aspect ratio
+
+---
+
+name: rwd-media-query
+class:
+
+# .red-text[Media Queries]
+
+```css
+@media screen and (max-device-width: 480px) {
+
+  /* ... styles here ... */
+
+}
+```
+
+### - inspect the physical characteristics of the device rendering our work
+### - CSS will only be applied when specific conditions are met (e.g. browser reaches a specific width)
+### - asking the device if its horizontal screen size .red-text[(max-device-width)] is equal to or less than 480px
+
+
+???
+W3C: [Media Queries](http://www.w3.org/TR/CSS21/media.html)
+
+screensiz.es: [screensiz.es](http://screensiz.es)
+---
+
+name: rwd-media-query-anatomy
+class:
+
+# .red-text[Anatomy of a Media Query]
+
+```css
+@media screen and (min-width: 768px) and (orientation: landscape) {
+
+  /* ... styles here ... */
+
+}
+```
+
+### - media type (all, screen, print, tv, ...)
+### - the query itself wrapped in parentheses
+### - name of feature
+### - corresponding value
+
+---
+
+name: rwd-media-query-features
+class: center
+
+## In the W3C specs, every device as a .red-text["display area"] and .red-text["rendering surface."]
+
+# .red-text[display area] = browser viewport = browser window
+# .red-text[rendering surface] = entire display = screen
+
+### `width` = display area width = viewport width
+### `height` = display area height = viewport height
+### `device-width` = rendering surface width = screen height
+### `device-height` = rendering surface height = screen height
+
+---
+
+name: rwd-mobile-first
+class:
+
+# .red-text[Mobile First]
+
+```css
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { ... }
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) { ... }
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200) { ... }
+```
+
+### - can be tricky to cram a multi-column layout into a smaller screen space
+### - it’s much better to start simple, then work upwards to more complex designs
+
+???
+
+Luke Wroblewski: [Mobile First](http://www.lukew.com/ff/entry.asp?933)
