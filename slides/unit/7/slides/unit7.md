@@ -153,7 +153,7 @@ class: center
 
 ### `width` = display area width = viewport width
 ### `height` = display area height = viewport height
-### `device-width` = rendering surface width = screen height
+### `device-width` = rendering surface width = screen width
 ### `device-height` = rendering surface height = screen height
 
 ---
