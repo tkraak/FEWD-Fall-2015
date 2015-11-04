@@ -161,10 +161,67 @@ class: center
 
 ---
 
+name: rwd-mobile-viewport
+class:
+
+# .red-text[Mobile Browser Viewport]
+
+### - mobile browsers render pages in a virtual "window" (the viewport)
+### - this viewport is usually wider than the physical screen (e.g. .red-text[980px] for mobile Safari)
+### - that way these browsers don't need to squeeze every page layout into a tiny window
+### - which would break many non-mobile-optimized sites
+### - users can pan and zoom to see different areas of the page
+
+???
+
+MDN: [Using the viewport meta tag to control layout on mobile browsers](https://developer.mozilla.org/en-US/docs/Mozilla/Mobile/Viewport_meta_tag)
+
+---
+
+name: rwd-viewport-meta-tag-history
+class:
+
+# .red-text[Viewport Meta Tag History]
+
+### - mobile Safari introduced the "viewport meta tag"
+### - to let web developers control the viewport's size and scale
+### - many other mobile browsers now support this tag
+### - but it is not part of any web standard
+
+???
+
+Safari Developer Library: [Configuring the Viewport](https://developer.apple.com/library/safari/documentation/AppleApplications/Reference/SafariWebContent/UsingtheViewport/UsingtheViewport.html)
+
+quirksmode.org: [A Tale of Two Viewports](http://www.quirksmode.org/mobile/viewports2.html)
+
+---
+
+name: rwd-viewport-meta-tag
+class:
+
+# .red-text[Viewport Meta Tag]
+
+### - a typical mobile-optimized page contains something like:
+
+```html
+<meta name="viewport" content="width=device-width, initial-scale=1">
+```
+
+### - `width` property controls the size of the viewport
+### - can be set to a specific number of pixels (e.g. `width=320`)
+### - or to `device-width` which is the width of the screen in CSS pixels at a scale of 100%
+### - `initial-scale` controls the zoom level when the page is first loaded
+
+???
+
+Google Developers: [Configuring the Viewport](https://developers.google.com/speed/docs/insights/ConfigureViewport?hl=en)
+
+---
+
 name: rwd-mobile-first
 class:
 
-# .red-text[Mobile First]
+# .red-text[Mobile First Development Approach]
 
 ```css
 /* Extra small devices (phones, less than 768px) */
