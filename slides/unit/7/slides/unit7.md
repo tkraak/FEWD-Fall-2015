@@ -85,12 +85,15 @@ Treehouse: [The 2014 Guide to Responsive Web Design](http://blog.teamtreehouse.c
 ---
 
 name: rwd-flexible-image
-class: center
+class:
 
 # .red-text[Flexible Images]
 
 ```css
-img { max-width: 100%; }
+img {
+	max-width: 100%;
+	height: auto;
+}
 ```
 
 ### - images should only ever be as large as their physical width in pixels
