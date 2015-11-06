@@ -243,3 +243,15 @@ class:
 ???
 
 Luke Wroblewski: [Mobile First](http://www.lukew.com/ff/entry.asp?933)
+
+---
+
+name: img-format
+class: center
+
+# .red-text[Image Formats]
+
+### - jpg (my-image.jpg)
+### - gif (my-image.gif)
+### - png (my-image.png)
+### - svg (my-image.svg)
