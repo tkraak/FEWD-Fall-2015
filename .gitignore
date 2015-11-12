@@ -8,3 +8,6 @@ Thumbs.db
 
 # Application specific files
 .sass-cache
+
+# node modules
+node_modules/*
