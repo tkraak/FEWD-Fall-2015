@@ -88,3 +88,42 @@ class: center
 [960 Grid System](http://960.gs)
 
 [Skeleton](http://getskeleton.com/)
+
+---
+
+name: jq-intro
+class: center, middle
+
+# .red-text[JavaScript Library]
+
+## jQuery
+
+---
+
+name: js-library-definition
+class: center
+
+# .red-text[What is a JavaScript library?]
+
+> ### <em>A JavaScript library is a library of pre-written JavaScript which allows for easier development of JavaScript-based applications, ...</em>
+
+> -- Wikipedia
+
+---
+
+name: jq-definition
+class:
+
+# .red-text[What is jQuery?]
+
+### ... a fast, small, and feature-rich JavaScript library that makes things like ...
+
+* #### .red-text[HTML document traversal],
+* #### .red-text[HTML manipulation],
+* #### .red-text[event handling],
+* #### .red-text[animation], and
+* #### .red-text[Ajax]
+
+### ... much simpler with an easy-to-use API that .red-text[orks across a multitude of browsers].
+
+---
