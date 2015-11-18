@@ -1,129 +1,103 @@
 class: center, middle
 
-## Unit 8
-# .red-text[Front-end / CSS Frameworks]
-
----
-name: fmw-definition
-class: center, middle
-# .red-text[What is a front-end framework?]
-
-### Set of HTML, CSS and JavaScript components that offer a foundation for website projects.
-
-???
-[Intro to CSS Frameworks](http://nicoledominguez.com/intro-to-css-frameworks/#/) by Nicole Dominguez
-
----
-name: fmw-why
-
-# .red-text[Why use a framework?]
-
-.float-left[
-### - rapid development and prototyping
-### - boilerplate code (reset)
-### - cross-browser concerns
-### - solid grid for layout
-### - best-practices foundation to build on
-### - work with others
-]
-
-.float-right[
-### - responsive out of the box
-### - extensive documentation
-### - learn HTML & CSS best-practices
-### - community support
-### - build good habbits
-### - lay groundwork
-]
-
-???
-CSS-Tricks: [What Are The Benefits of Using a CSS Framework?](https://css-tricks.com/what-are-the-benefits-of-using-a-css-framework/)
-
-Speckyboy: [Discussing the Pros and Cons of Using a CSS Framework](http://speckyboy.com/2011/03/14/discussing-the-pros-and-cons-of-using-a-css-framework/)
-
----
-name: fmw-why-not
-class: center
-
-# .red-text[Why not use a framework?]
-
-### - know framework well to save time
-### - forces HTML & CSS on you
-### - code bloat
-### - define your design
-### - opinionated
-### - performance penalty
-### - never learn what's "under the hood"
-
-???
-
-SitePoint: [CSS Framework Fortunes and Failures with Harry Roberts](http://www.sitepoint.com/css-framework-fortunes-failures-harry-roberts/)
+## Unit 9
+# .red-text[Accessibility]
+## \#a11y
 
 ---
 
-name: fmw-popular
-class: center
-
-# .red-text[Popular Frameworks]
-
-### - Bootstrap
-### - Foundation
-### - Semantic UI
-### - 960 Grid System
-### - Skeleton
-
-???
-[Responsive CSS Framework Comparison](http://responsive.vermilion.com/compare.php)
-
-[Compare Front-end Frameworks](http://usablica.github.io/front-end-frameworks/compare.html)
-
-[The 5 Most Popular Frontend Frameworks of 2014 Compared](http://www.sitepoint.com/5-most-popular-frontend-frameworks-compared/)
-
-[Bootstrap](http://getbootstrap.com/)
-
-[Foundation](http://foundation.zurb.com/)
-
-[Semantic UI](http://semantic-ui.com/)
-
-[960 Grid System](http://960.gs)
-
-[Skeleton](http://getskeleton.com/)
-
----
-
-name: jq-intro
+name: a11y-definition
 class: center, middle
 
-# .red-text[JavaScript Library]
+> ## The power of the Web is in its universality. .red-text[Access by everyone regardless of disability] is an essential aspect.
+-- Tim Berners-Lee, W3C Director and inventor of the World Wide Web
 
-## jQuery
+???
+[W3C Accessibility](http://www.w3.org/standards/webdesign/accessibility)
+
+[Web Accessibility Initiative (WAI)](http://www.w3.org/WAI/)
 
 ---
 
-name: js-library-definition
+name: a11y-disabilities
 class: center
 
-# .red-text[What is a JavaScript library?]
+# .red-text[Broad Categories of Disabilities]
 
-> ### <em>A JavaScript library is a library of pre-written JavaScript which allows for easier development of JavaScript-based applications, ...</em>
+### - vision impairment
+### - mobility impairment
+### - auditory impairment
+### - cognitive impairment
 
-> -- Wikipedia
+---
+
+name: a11y-vision
+class: center
+
+# .red-text[Vision Impairment]
+
+### - low or no vision
+### - screen reader
+### - Braille display
+### - screen magnifier
+### - browser text zoom
 
 ---
 
-name: jq-definition
-class:
+name: a11y-mobility
+class: center
 
-# .red-text[What is jQuery?]
+# .red-text[Mobility Impairment]
 
-### ... a fast, small, and feature-rich JavaScript library that makes things like ...
-
-* #### .red-text[HTML document traversal],
-* #### .red-text[HTML manipulation],
-* #### .red-text[event handling],
-* #### .red-text[animation], and
-* #### .red-text[Ajax]
-
-### ... much simpler with an easy-to-use API that .red-text[orks across a multitude of browsers].
+### - limited or no use of hands
+### - modified mice and keyboards
+### - foot pedals
+### - joysticks
 
 ---
+
+name: a11y-audio
+class: center
+
+# .red-text[Auditory Impairment]
+
+### - limited or no hearing
+### - miss out on multimedia audio
+### - provide alternatives (transcripts, video captions)
+
+---
+
+name: a11k-cognitive
+class: center
+
+# .red-text[Cognitive Impairment]
+
+### - memory problems
+### - reading and comprehension problems
+### - problem solving
+### - attention limitations
+### - desing sites simply and clearly (which benefits all uses)
+---
+
+name: a11y-wai
+class: center
+
+# .red-text[Web Accessibility Initiative (WAI)]
+
+ ### - created by W3C to make the Web usable for everyone (w3.org/WAI)
+ ### - Web Content Accessibility Guidelines (w3.org/WAI/intro/wcag)
+ ### - US government used WCAG as basis for Section 508 accessibility guidelines
+ ### - section508.gov
+
+???
+
+[US Government Section 508](http://section508.gov)
+
+---
+
+name: a11y-aria
+class: center
+
+# .red-text[ARIA]
+
+### Adding .red-text[accessibility information] to HTML elements using the<br> .red-text[Accessible Rich Internet Applications specification (WAI-ARIA]).
