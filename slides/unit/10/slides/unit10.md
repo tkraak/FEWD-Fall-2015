@@ -1,103 +1,112 @@
 class: center, middle
 
-## Unit 9
-# .red-text[Accessibility]
-## \#a11y
+## Unit 10
+# .red-text[Optimization & Deployment]
 
 ---
 
-name: a11y-definition
+name: 10-browser-device-testing
+class: center
+
+# .red-text[Browser & Device Testing]
+
+### - local
+### - virtual machines
+### - web-based
+### - actual (mobile) device
+
+???
+
+[IE Testing with Virtual Box and Modern.ie](http://wesbos.com/ie-testing-virtual-box/)
+
+[Test Microsoft Edge and versions of IE6 through IE11 using free virtual machines.](https://dev.windows.com/en-us/microsoft-edge/tools/vms/)
+
+[Browsershots](http://browsershots.org/)
+
+[BrowserStack](https://www.browserstack.com/)
+
+[Sauce Labs](https://saucelabs.com/)
+
+---
+
+name: 10-progressive-enhancements-vs-graceful-degradation
 class: center, middle
 
-> ## The power of the Web is in its universality. .red-text[Access by everyone regardless of disability] is an essential aspect.
--- Tim Berners-Lee, W3C Director and inventor of the World Wide Web
+# Graceful Degradation
 
-???
-[W3C Accessibility](http://www.w3.org/standards/webdesign/accessibility)
+# vs
 
-[Web Accessibility Initiative (WAI)](http://www.w3.org/WAI/)
-
----
-
-name: a11y-disabilities
-class: center
-
-# .red-text[Broad Categories of Disabilities]
-
-### - vision impairment
-### - mobility impairment
-### - auditory impairment
-### - cognitive impairment
-
----
-
-name: a11y-vision
-class: center
-
-# .red-text[Vision Impairment]
-
-### - low or no vision
-### - screen reader
-### - Braille display
-### - screen magnifier
-### - browser text zoom
-
----
-
-name: a11y-mobility
-class: center
-
-# .red-text[Mobility Impairment]
-
-### - limited or no use of hands
-### - modified mice and keyboards
-### - foot pedals
-### - joysticks
-
----
-
-name: a11y-audio
-class: center
-
-# .red-text[Auditory Impairment]
-
-### - limited or no hearing
-### - miss out on multimedia audio
-### - provide alternatives (transcripts, video captions)
-
----
-
-name: a11k-cognitive
-class: center
-
-# .red-text[Cognitive Impairment]
-
-### - memory problems
-### - reading and comprehension problems
-### - problem solving
-### - attention limitations
-### - desing sites simply and clearly (which benefits all uses)
----
-
-name: a11y-wai
-class: center
-
-# .red-text[Web Accessibility Initiative (WAI)]
-
- ### - created by W3C to make the Web usable for everyone (w3.org/WAI)
- ### - Web Content Accessibility Guidelines (w3.org/WAI/intro/wcag)
- ### - US government used WCAG as basis for Section 508 accessibility guidelines
- ### - section508.gov
+# .red-text[Progressive Enhancements]
 
 ???
 
-[US Government Section 508](http://section508.gov)
+[W3C: Graceful degradation versus progressive enhancement](https://www.w3.org/wiki/Graceful_degradation_versus_progressive_enhancement)
+
 
 ---
 
-name: a11y-aria
+name: 10-graceful-degradation
 class: center
 
-# .red-text[ARIA]
+# .red-text[Graceful Degradation]
 
-### Adding .red-text[accessibility information] to HTML elements using the<br> .red-text[Accessible Rich Internet Applications specification (WAI-ARIA]).
+## approach for buidling websites and applications that ...
+
+### - provide a good level of user experience in modern browsers
+### - degrade gracefully in older browsers
+### - may not be as pleasant or pretty, but basic functionality works
+
+---
+
+name: 10-progressive-enhancement
+class: center
+
+# .red-text[Progressive Enhancement]
+
+## graceful degradation in reverse ...
+
+### - establish base-level user experience for most browsers
+### - more advanced functionality added when a browser supports it
+
+???
+
+[Wikipedia: Progressive enhancement](https://en.wikipedia.org/wiki/Progressive_enhancement)
+
+---
+
+name: 10-hostile-dev-environment
+class: center
+
+# .red-text[The Web]
+
+## a Hostile Development Environment
+
+### - any device
+### - any display
+### - any location (language)
+### - browsing application which transmits and receives data using internet protocols
+### - cannot make assumptions about setup or technical ability
+
+---
+name: 10-web-pages-cake
+class: center
+
+# .red-text[Web Pages Are Cake]
+
+> ## <em>Think of your web pages  as cakes.</em>
+
+> ### <em> A .red-text[solid foundation of markup], a .red-text[tasteful layer of style], and an .red-text[appropriate application of JavaScript] make for a well- and responsibly-built website.</em>
+
+-- Jason Garber (sixtwothree.org)
+
+???
+
+[The Web Is Cake](http://sixtwothree.org/posts/the-web-is-cake)
+
+[Designing Experience Layers](http://sixtwothree.org/posts/designing-experience-layers)
+
+---
+
+
+
+
